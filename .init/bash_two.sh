@@ -54,4 +54,4 @@ networks:
     name: net
 EOL
 
-echo "Setup complete! You can now run 'docker-compose up -d' from ~/docker/filebrowser."
+echo "Setup complete! You can now run 'docker compose up -d' from ~/docker/filebrowser."
