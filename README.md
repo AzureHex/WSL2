@@ -3,20 +3,12 @@
 ```sh
 sudo apt update && sudo apt upgrade -y
 sudo apt install fish git curl tldr -y
-```
 
-```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-```sh
 sudo bash -c 'cat <<EOL > /etc/wsl.conf
 [boot]
 systemd=true
 EOL'
-```
 
-```sh
 # Add Docker's official GPG key:
 sudo apt-get update
 sudo apt-get install ca-certificates curl
@@ -34,6 +26,10 @@ sudo apt-get update
 sudo usermod -aG docker $USER
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
+```
+
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ```sh
