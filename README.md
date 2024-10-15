@@ -10,6 +10,13 @@ sudo apt install fish git curl tldr -y
 ```
 
 ```sh
+sudo bash -c 'cat <<EOL > /etc/wsl.conf
+[boot]
+systemd=true
+EOL'
+```
+
+```sh
 #!/bin/bash
 
 # Homebrew Formulae
