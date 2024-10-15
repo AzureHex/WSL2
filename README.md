@@ -6,16 +6,6 @@ sudo apt install zsh fish git wget bat duf tree tldr glances btop speedtest-cli 
 ```
 
 ```sh
-cd
-mkdir -p ~/downloads ~/docker/filebrowser ~/.zsh
-cd docker
-mkdir filebrowser
-cd filebrowser
-touch filebrowser.db
-nano compose.yml
-```
-
-```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
@@ -23,13 +13,11 @@ nano compose.yml
 brew install nushell fish starship fastfetch neovim yazi unzip lsd curl mailsy
 ```
 
-
-bash script
 ```sh
 #!/bin/bash
 
 # Create directories
-mkdir -p ~/downloads ~/docker/filebrowser
+mkdir -p ~/downloads ~/docker/filebrowser ~/.zsh
 
 # Navigate to the filebrowser directory
 cd ~/docker/filebrowser
