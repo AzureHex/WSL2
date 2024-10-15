@@ -19,6 +19,9 @@ brew install zsh fish nushell starship fastfetch neovim yazi unzip lsd bat duf t
 # Create directories
 mkdir -p ~/downloads ~/docker/filebrowser ~/.zsh
 
+# Clone searchjump
+git clone https://gitee.com/DreamMaoMao/searchjump.yazi.git ~/.config/yazi/plugins/searchjump.yazi
+
 # Navigate to .zsh directory
 cd ~/.zsh
 
