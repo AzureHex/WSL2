@@ -2,7 +2,7 @@
 
 ```sh
 sudo apt update && sudo apt upgrade -y
-sudo apt install zsh fish git wget bat duf tree tldr glances btop speedtest-cli neovim tmux ffmpeg -y
+sudo apt install fish git curl tldr -y
 ```
 
 ```sh
@@ -10,7 +10,7 @@ sudo apt install zsh fish git wget bat duf tree tldr glances btop speedtest-cli 
 ```
 
 ```sh
-brew install nushell fish starship fastfetch neovim yazi unzip lsd curl mailsy
+brew install zsh fish nushell starship fastfetch neovim yazi unzip lsd bat duf tree glances speedtest-cli btop tmux ffmpeg mailsy
 ```
 
 ```sh
@@ -18,6 +18,17 @@ brew install nushell fish starship fastfetch neovim yazi unzip lsd curl mailsy
 
 # Create directories
 mkdir -p ~/downloads ~/docker/filebrowser ~/.zsh
+
+# Navigate to .zsh directory
+cd ~/.zsh
+
+# Clone zsh plugins
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+git clone https://github.com/zsh-users/zsh-autosuggestions
+git clone https://github.com/marlonrichert/zsh-autocomplete.git
+
+# Navigate to home directory
+cd
 
 # Navigate to the filebrowser directory
 cd ~/docker/filebrowser
