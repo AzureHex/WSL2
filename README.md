@@ -10,25 +10,27 @@ sudo apt install fish git curl tldr -y
 ```
 
 ```sh
-brew install zsh fish nushell starship fastfetch neovim yazi unzip lsd bat duf tree glances speedtest-cli btop tmux ffmpeg mailsy
-```
-
-```sh
 #!/bin/bash
 
-# Create directories
-mkdir -p ~/downloads ~/docker/filebrowser ~/.zsh
+# Homebrew Formulae
+brew install zsh fish nushell starship fastfetch neovim yazi unzip lsd bat duf tree glances speedtest-cli btop tmux ffmpeg mailsy
 
-# Clone searchjump
+# Create directories
+mkdir -p ~/downloads ~/docker/filebrowser ~/.zsh ~/.local/share/tldr
+
+# Updating tldr pages
+tldr -u
+
+# Installing tgpt
+curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash -s /usr/local/bin
+
+# yazi plugin
 git clone https://gitee.com/DreamMaoMao/searchjump.yazi.git ~/.config/yazi/plugins/searchjump.yazi
 
-# Navigate to .zsh directory
-cd ~/.zsh
-
-# Clone zsh plugins
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-git clone https://github.com/zsh-users/zsh-autosuggestions
-git clone https://github.com/marlonrichert/zsh-autocomplete.git
+# Zsh plugins
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh
+git clone https://github.com/marlonrichert/zsh-autocomplete.git ~/.zsh
 
 # Navigate to home directory
 cd
