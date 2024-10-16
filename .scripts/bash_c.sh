@@ -1,3 +1,13 @@
+# Prompt for sudo password
+echo "This script requires sudo privileges. Please enter your password."
+sudo -v
+
+# Check if the password was entered correctly
+if [ $? -ne 0 ]; then
+    echo "Sudo authentication failed. Exiting."
+    exit 1
+fi
+
 sudo rm -rf ~/.scripts
 
 sudo apt autoremove

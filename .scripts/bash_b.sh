@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# Prompt for sudo password
+echo "This script requires sudo privileges. Please enter your password."
+sudo -v
+
+# Check if the password was entered correctly
+if [ $? -ne 0 ]; then
+    echo "Sudo authentication failed. Exiting."
+    exit 1
+fi
+
 # Homebrew Formulae
 brew install zsh fish nushell starship fastfetch neovim yazi unzip lsd bat duf tree glances speedtest-cli btop tmux ffmpeg mailsy
 

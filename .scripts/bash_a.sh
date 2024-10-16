@@ -1,3 +1,13 @@
+# Prompt for sudo password
+echo "This script requires sudo privileges. Please enter your password."
+sudo -v
+
+# Check if the password was entered correctly
+if [ $? -ne 0 ]; then
+    echo "Sudo authentication failed. Exiting."
+    exit 1
+fi
+
 echo -e "\n# Aliases\nalias ll='ls -l'\nalias la='ls -A'\nalias l='ls -CF'\nalias bat='batcat'\n\neval \"\$($(brew --prefix)/bin/brew shellenv)\"\nexport HOMEBREW_NO_ANALYTICS=1\n\n# Correcting if it's 'fastfetch'\nfastfetch\n" >> ~/.bashrc
 
 sudo apt update && sudo apt upgrade -y
