@@ -1,4 +1,6 @@
 ```sh
+mv .config .tmux.conf .zshrc ~/
+
 cd ~/.init
 
 chmod +x bash_one.sh

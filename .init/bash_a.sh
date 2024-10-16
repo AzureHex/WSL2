@@ -1,3 +1,5 @@
+echo -e "\n# Aliases\nalias ll='ls -l'\nalias la='ls -A'\nalias l='ls -CF'\nalias bat='batcat'\n\neval \"\$($(brew --prefix)/bin/brew shellenv)\"\nexport HOMEBREW_NO_ANALYTICS=1\n\n# Correcting if it's 'fastfetch'\nfastfetch\n" >> ~/.bashrc
+
 sudo apt update && sudo apt upgrade -y
 sudo apt install fish git curl tldr -y
 
@@ -5,6 +7,8 @@ sudo bash -c 'cat <<EOL > /etc/wsl.conf
 [boot]
 systemd=true
 EOL'
+
+
 
 # Add Docker's official GPG key:
 sudo apt-get update
