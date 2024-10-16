@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Prompt for sudo password
 echo "This script requires sudo privileges. Please enter your password."
 sudo -v
