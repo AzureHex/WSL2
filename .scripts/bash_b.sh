@@ -20,9 +20,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh
 git clone https://github.com/marlonrichert/zsh-autocomplete.git ~/.zsh
 
-# Navigate to home directory
-cd
-
 # Navigate to the filebrowser directory
 cd ~/docker/filebrowser
 
