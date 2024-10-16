@@ -3,7 +3,7 @@
 ```sh
 mv .config .tmux.conf .zshrc ~/
 
-cd ~/.init
+cd ~/.scripts
 
 chmod +x bash_a.sh
 chmod +x bash_b.sh

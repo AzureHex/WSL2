@@ -1,4 +1,4 @@
-sudo rm -rf ~/.init
+sudo rm -rf ~/.scripts
 
 sudo apt autoremove
 
